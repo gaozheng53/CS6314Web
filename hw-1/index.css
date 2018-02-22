@@ -1,0 +1,117 @@
+*{margin:0;padding:0;}
+body{
+	background-image: url(pic/bg.png);
+}
+
+#header{
+    padding:8px;
+    height:47px;
+    background:black;
+}
+nav img{
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+}
+nav .navcontent{
+    position: absolute;
+    top: 18px;
+    left: 60px;
+    margin-left: 10px;
+}
+a{
+    list-style: none;
+    text-decoration: none;  
+    margin: 10px;
+}
+
+nav a{
+    color: white;
+}
+#main{
+    width:100%;
+    position:relative;
+}
+#main .main-left{
+    width:250px;
+    height:800px;
+
+    position:absolute;
+    left:0;
+    top:0;
+
+}
+#main .main-left h2{
+	padding-top: 15px;
+}
+#main .main-left a{
+	list-style: none;
+  
+    color: grey;
+}
+.main-left ul{
+	margin-top: 30px;
+}
+.main-left li{
+    margin: 10px;
+}
+h2{
+    clear: both;
+    margin: 15px;
+
+}
+h3{
+    margin: 20px;
+}
+#main .main-center{
+    height:2720px;
+    background-color: white;
+    margin:0 190px 0 250px;
+    padding:10px;
+}
+#main .main-center .Home img{
+    float: left;
+    margin-right: 30px;
+    margin-bottom: 60px;
+    width: 300px;
+    height: 130px;
+}
+#main .main-center p{
+	margin-left: 25px;
+	margin-right: 25px; 
+}
+#main .main-center .Projects li{
+	margin-left: 40px;
+}
+#main .main-center .travelcontent img{
+	width: 850px;
+	height: 600px;
+}
+
+#main .profileDescription p{
+    margin: 5px;
+}
+
+#main .main-right{
+    width:150px;
+    height:800px;
+  
+    position:absolute;
+    right:0;
+    top:0;
+}
+#main .main-right h2{
+	padding-top: 10px;
+}
+#main .main-right .topics img{
+	height: 40px;
+	width: 40px;
+}
+#footer{
+    width: 100%;
+    height: 30px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}

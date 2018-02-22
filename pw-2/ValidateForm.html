@@ -1,0 +1,108 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<title>CheckValid</title>
+	<style>
+		li{
+			text-decoration: none;
+			list-style: none;
+
+		}
+		h2{
+			text-align: center;
+		}
+		.form{
+			margin-left: 42%;
+		}
+	</style>
+	<script >
+		function validate_required(field){
+			{
+			with (field)
+			  {
+			  if (value==null||value=="")
+			    {
+			    	return false;
+			    }
+			  else {return true;}
+			  }
+			}
+		}	
+		
+
+
+		function validate()
+		{
+			var string="";
+			var string1="";
+			var string2="";
+			var string3="";
+			var username = document.getElementById("username");
+			var password = document.getElementById("password");
+			var phonenumber = document.getElementById("phonenumber");
+			var usernamemessage = document.getElementById("usernamemessage");
+			var passwordmessage = document.getElementById("passwordmessage");
+			var phonenumbermessage = document.getElementById("phonenumbermessage");
+			 	
+			 	//Check condition 1
+			   if(validate_required(username)==false||validate_required(password)==false||validate_required(phonenumber)==false){
+			   		string = "All fields are mandatory!";
+			   		document.getElementById("show").innerHTML=string;
+			   		return false;
+			   }
+			    //check condition 2 and 3
+			    document.getElementById("show").innerHTML="";
+			    if(username.value.length<6){
+			    	string1=string1+"Username too short!   ";
+			    	usernamemessage.style.color="red";
+
+			    }else{
+			    	usernamemessage.style.color="green";
+			    	string1=string1+"Valid username:"+username.value+"    ";
+			    }
+			    if(password.value.length<6){
+			    	string2=string2+"Password too short!   ";
+			    	passwordmessage.style.color="red";
+			    	
+			    }else{
+			    	passwordmessage.style.color="green";
+			    	string2=string2+"Valid password:"+password.value+"    ";
+			    }
+			    var re = /^[0-9]*$/  ;
+			    if (!re.test(phonenumber.value)){
+			    	string3=string3+"Please enter only number!   ";
+			    	phonenumbermessage.style.color="red";			    	
+			    }else{
+			    	phonenumbermessage.style.color="green";
+			    	string3=string3+"Valid phonenumber:"+phonenumber.value+"    ";
+			    }
+			  
+			  document.getElementById("usernamemessage").innerHTML=string1;
+			  document.getElementById("passwordmessage").innerHTML=string2;
+			  document.getElementById("phonenumbermessage").innerHTML=string3;
+			  return false;
+		}
+
+	</script>
+</head>
+<body>
+	<h2>Practise Assignment</h2>
+	<div class="form">
+		Username: <input type="text" id="username"><br>
+		Password: <input type="password" id="password"><br>
+		Phone number: <input type="text" id="phonenumber"><br>
+		<button onclick="validate()">Validate</button>	
+		<p>
+		<span id="show"></span>
+		<span id="usernamemessage"></span>
+		<span id="passwordmessage"></span>
+		<span id="phonenumbermessage"></span></p>
+		<br><br>
+		<p>Created by: Zheng Gao   2/1/2018</p>
+	
+	</div>
+	
+
+</body>
+</html>
