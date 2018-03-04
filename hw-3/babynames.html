@@ -4,7 +4,7 @@
 	<title>BabyNames</title>
 </head>
 <body>
-<!-- <script language = "javascript" type = "text/javascript">
+<script language = "javascript" type = "text/javascript">
          //Browser Support Code
          function ajaxFunction() {
             var ajaxRequest;  // The variable that makes Ajax possible!
@@ -44,18 +44,18 @@
             // server script.
             var year = document.getElementById('year').value;
             var gender = document.getElementById('gender').value;
-            var queryString = "?year = " + year ;
-            
-            queryString +=  "&gender = " + gender;
-            ajaxRequest.open("POST", "babynames.php" + queryString, true);
+
+            var queryString = "?year=" + year ;            
+            queryString +=  "&gender=" + gender;
+            ajaxRequest.open("GET", "babynames.php" + queryString, true);
             ajaxRequest.send(null); 
          }
          
 </script>
- -->
+
 
 <h1>Top-Five Baby Names</h1>
-<form action="babynames.php" method="post">
+<form>
 	<select name="year" id="year">
 	  <option value ="nonechoice">None</option>
 	  <option value ="2005">2005</option>
@@ -75,8 +75,8 @@
 	  <option value ="m">male</option>
 	  <option value ="f">female</option>
 	</select>
-	<input type="submit" value="submit">
-	<!-- <input type="button" onclick="ajaxFunction()" value="submit"> -->
+	<!-- <input type="submit" value="submit"> -->
+	<input type="button" onclick="ajaxFunction()" value="submit">
 </form>
 <div id="ajaxDiv">Your result will display here...</div>
 </body>

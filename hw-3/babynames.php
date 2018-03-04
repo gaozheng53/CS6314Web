@@ -1,20 +1,14 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>hhh</title>
-</head>
-<body>
 
 <?php
 
-	$year = $_POST["year"];
-	$gender = $_POST["gender"];
+	$year = $_GET["year"];
+	$gender = $_GET["gender"];
 
 	$con = mysqli_connect("localhost","root","root","HW3");
 	if (!$con){
 	  die('Could not connect: ' . mysqli_connect_error());
 	 }
-	echo "Connected successfully";
+	// echo "Connected successfully";
 
 	$query = "";
 	if($year=='nonechoice'&&$gender=='nonechoice'){
@@ -44,12 +38,9 @@
 	    echo "</tr>";
 	}
 	echo "</table>";
-	echo $list;
+
 ?>
 
 
-
-</body>
-</html>
 
 
