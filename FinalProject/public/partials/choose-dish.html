@@ -1,0 +1,22 @@
+<h1>Choose Your Dishes</h1>
+
+<br>
+<br>
+<table>
+	<tr ng-repeat='d in dish'>
+		<form action="post">
+			<td style="padding: 5px">{{d.name}}
+				<input type="hidden" name="dishname" value="{{d.name}}" class="form-control" ng-model="dishname">
+				<input type="hidden" name="dishname" value="{{d.price}}" class="form-control" ng-model="price">
+			</td>
+			<td style="padding: 5px">
+				<input type="number" class="form-control" ng-model="count" min="0" max="10" integer />
+			</td>
+			<td><input type="button" class="btn btn-primary btn-sm" value="Add to Cart" style="padding: 3px" ng-click="save()"></input></td>
+		</form>
+		
+	</tr>
+</table>
+
+
+

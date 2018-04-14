@@ -1,0 +1,183 @@
+body {
+	width: 100%;
+	min-width: 1080px;
+    background-color: #eae9e5;
+}
+
+a {
+  color: #00B7FF;
+}
+.clearfix::after{
+	content: "";
+	clear: both;
+	display: table;
+}
+.header{
+	background-color: #ed153e;
+	padding:15px;
+}
+.footer{
+	background-color: #2e2426;
+	padding:15px;
+}
+#login{
+	float: right;
+}
+#welcome {
+	width: 100%;
+	height: 480px;
+	background-position: center 0; 
+	background-repeat: no-repeat; 
+	background-attachment:fixed; 
+	background-size: cover; 
+	background-image: url("../images/home1.jpg");
+}
+#homestart{
+	color: white;
+	font-family: Sans-serif;
+	font-size: 40px;
+	text-align: center;
+	width: 100%;
+	position: relative;
+	top:300px;
+	/*background-color: black;*/
+}
+#button1{
+	margin: 30px;
+	background-color: #ed153e;
+	border-color: #ed153e;
+	outline: none;
+	font-family: Sans-serif;
+	font-size: 30px;
+}
+#button1:hover{
+	background-color: #d01337;
+	border-color: #d01337;
+}
+#content {
+	width: 100%;
+	height: 320px;
+	background-position: center 0; 
+	background-repeat: no-repeat; 
+	background-attachment:fixed; 
+	background-size: cover; 
+	background-image: url("../images/home1.jpg");
+}
+#navigation{
+	width: 100%;
+	position: relative;
+	top:255px;
+	/*background-color: black;*/
+}
+.nav-tabs{
+	font-family: Sans-serif;
+	font-size: 30px;
+}
+.nav-tabs a{
+	color: white;
+}
+#details{
+	width: 90%;
+	height: 80%;
+	margin-top: 100px;
+	background-color: white;
+}
+#details h1{
+	margin: 20px;
+	font-family: Sans-serif;
+	color: #ed153e;
+}
+#menu{
+	float: left;
+	width: 100%;
+	margin-top: 50px;
+}
+.row{
+	padding: 20px;
+	border: 1px solid #ed153e;
+	border-style: groove;
+	border-radius:25px;
+}
+#user {
+	width: 100%;
+	height: 900px;
+	background-position: center 0; 
+	background-repeat: no-repeat; 
+	background-attachment:fixed; 
+	background-size: cover; 
+	background-image: url("../images/home1.jpg");
+}
+#register{
+	color: #2e2426;
+	font-family: Sans-serif;
+	font-size: 40px;
+	text-align: center;
+	width: 90%;
+	position: relative;
+	top:200px;
+	background-color: white;
+	border: 3px solid #ed153e;
+}
+#register p{
+	margin: 20px;
+}
+#olduser{
+	font-size: 30px;
+	width: 40%;
+	float: left;
+	margin-right: -20%;
+	margin-top: 50px;
+	margin-bottom: 70px;
+	/*border:1px solid grey;*/
+	/*background-color: black;*/
+}
+#olduser p{
+	font-size: 14px;
+	color: #00B7FF;
+}
+#newuser{
+	font-size: 30px;
+	width: 40%;
+	float: right;
+	margin-left: -20%
+	margin-top: 50px;
+	margin-bottom: 70px;
+	/*border:1px solid grey;*/
+	/*background-color: grey;*/
+}
+
+.spinner {  
+  width: 100px;  
+}  
+.spinner input {  
+  text-align: right;  
+}  
+.input-group-btn-vertical {  
+  position: relative;  
+  white-space: nowrap;  
+  width: 1%;  
+  vertical-align: middle;  
+  display: table-cell;  
+}  
+.input-group-btn-vertical > .btn {  
+  display: block;  
+  float: none;  
+  width: 100%;  
+  max-width: 100%;  
+  padding: 8px;  
+  margin-left: -1px;  
+  position: relative;  
+  border-radius: 0;  
+}  
+.input-group-btn-vertical > .btn:first-child {  
+  border-top-right-radius: 4px;  
+}  
+.input-group-btn-vertical > .btn:last-child {  
+  margin-top: -2px;  
+  border-bottom-right-radius: 4px;  
+}  
+.input-group-btn-vertical i{  
+  position: absolute;  
+  top: 0;  
+  left: 4px;  
+}  

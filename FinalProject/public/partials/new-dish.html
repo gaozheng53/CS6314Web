@@ -1,0 +1,30 @@
+
+<h1>Dish Detail</h1>
+
+<form>
+    <div class="form-group">
+        <label>name</label>		
+        <input class="form-control" ng-model="dish.name"></input>
+    </div>
+    <div class="form-group">
+        <label>class</label>		
+        <input class="form-control" ng-model="dish.class"></input>
+    </div>
+    <div class="form-group">
+        <label>picture</label>		
+        <input class="form-control" ng-model="dish.picture"></input>
+    </div>
+    <div class="form-group">
+        <label>price</label>		
+        <input class="form-control" ng-model="dish.price"></input>
+    </div>
+    <div class="form-group">
+        <label>stock</label>		
+        <input class="form-control" ng-model="dish.stock"></input>
+    </div>
+    <div class="form-group">
+        <label>description</label>
+        <textarea class="form-control" ng-model="dish.description"></textarea>
+    </div>
+    <input type="button" class="btn btn-primary" value="Save" ng-click="save()"></input>	
+</form>	
