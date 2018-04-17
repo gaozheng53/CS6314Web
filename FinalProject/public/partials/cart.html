@@ -1,43 +1,39 @@
 <div class="header clearfix">
+</div>
+<div class="container" id="content">
+
+</div>
+<div class="container" id="details">
+	<h1>Cart</h1>
+	<div class="container" id="cartable">
+		<table class="table">
+			<thead>
+				<tr>
+					<th>菜名</th>
+					<th>单价</th>
+					<th>份数</th>
+					<th>小计</th>
+					<th>操作</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr ng-repeat='c in cart'>
+					<td>{{c.dish_name}}</td>
+					<td>${{c.price}}</td>
+					<td>{{c.count}}</td>
+					<td>${{c.price*c.count}}</td>
+					<td>
+						<a href="/#/cart/delete/{{c._id}}"><input type="button" value="Delete" class="btn btn-xs btn-danger"/></a>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<button class="btn btn-primary">Confirmation</button>
 	</div>
-	<div class="container" id="content">
 
-	</div>
-	<div class="container" id="details">
-		<h1>Cart</h1>
-		<div class="container" id="cartable">
-			<table class="table">
-				<thead>
-					<tr>
-						<th>菜名</th>
-						<th>单价</th>
-						<th>份数</th>
-						<th>小计</th>
-						<th>操作</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr ng-repeat='c in cart'>
-						<td>{{c.dish_name}}</td>
-						<td>{{c.price}}</td>
-						<td>{{c.count}}</td>
-						<td>$10</td>
-						<td><a href="/#/cart/delete/{{c._id}}"><input type="button" value="Delete" class="btn btn-xs btn-danger"/></a></td>
-					</tr>
-				</tbody>
-			</table>
-		</div>
-	</div>
+</div>
 
+<script type="text/javascript">
+	
+</script>
 
-
-<!-- <h1>Your Cart</h1>
-
-<table style="width: 500px">
-	<tr><th>Name</th><th>Count</th><th>Remove</th></tr>
-	<tr ng-repeat='c in cart'>
-		<td>{{c.dish_name}}</td>
-		<td>{{c.count}}</td>
-		<td><a href=""><i class="glyphicon glyphicon-remove"></i></a></td></tr>
-</table>
-  -->
