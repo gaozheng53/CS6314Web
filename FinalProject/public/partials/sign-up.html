@@ -1,34 +1,38 @@
 
 <h1>Sign Up</h1>
 
-<form>
+<form id="sign-up-form" style="width: 400px">
     <div class="form-group">
         <label>username</label>		
-        <input class="form-control" ng-model="user.username"></input>
+        <input  id="username" class="form-control required" ng-model="user.username"></input>
     </div>
     <div class="form-group">
         <label>password</label>		
-        <input class="form-control" ng-model="user.password"></input>
+        <input id="password" type="password" class="form-control" ng-model="user.password"></input>
     </div>
     <div class="form-group">
         <label>name</label>		
-        <input class="form-control" ng-model="user.name"></input>
+        <input id="name" class="form-control" ng-model="user.name"></input>
     </div>
     <div class="form-group">
         <label>phone</label>		
-        <input class="form-control" ng-model="user.phone"></input>
+        <input id="phone" class="form-control" ng-model="user.phone"></input>
     </div>
     <div class="form-group">
         <label>email</label>		
-        <input class="form-control" ng-model="user.email"></input>
+        <input id="email" class="form-control" ng-model="user.email"></input>
     </div>
     <div class="form-group">
         <label>avatar</label>		
-        <input class="form-control" ng-model="user.avatar"></input>
+        <input id="avatar" class="form-control" ng-model="user.avatar"></input>
     </div>
     <div class="form-group">
         <label>address</label>
-        <textarea class="form-control" ng-model="user.address"></textarea>
+        <textarea id="address" class="form-control" ng-model="user.address"></textarea>
     </div>
-    <input type="button" class="btn btn-primary" value="Save" ng-click="save()"></input>	
+    
+    <input type="button" id="submit-signup" class="btn btn-primary" value="Save" ng-click="save()"></input>	
 </form>	
+
+
+

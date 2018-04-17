@@ -69,10 +69,26 @@ app.controller('HomeCtrl', ['$scope', '$resource','$location',
 app.controller('AddAccountCtrl', ['$scope', '$resource', '$location',
     function($scope, $resource, $location){
         $scope.save = function(){
+            if(typeof $scope.user==="undefined"){
+                console.log("user undefined");
+                $scope.user = {};
+                return;
+            }
+            if(!($scope.user.hasOwnProperty('username')&&$scope.user.hasOwnProperty('password'))){
+                console.log("properties undefined");
+                $scope.user = {};
+                return;
+            }
+
+            console.log("Validation passed");
+
             var Users = $resource('/api/user');
             Users.save($scope.user, function(){
                 $location.path('/');
             });
+            $scope.user = {};
+            // alert($scope.errorinfo);
+            // console.log($scope.errorinfo);
         };
     }]);
 
@@ -181,3 +197,4 @@ app.controller('ManageMenuCtrl', ['$scope', '$resource',
             $scope.dish = dish;
         });
     }]);
+
