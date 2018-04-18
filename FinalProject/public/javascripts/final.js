@@ -83,12 +83,11 @@ app.controller('AddAccountCtrl', ['$scope', '$resource', '$location',
             console.log("Validation passed");
 
             var Users = $resource('/api/user');
+            $scope.user['password'] = md5($scope.user['password']);
             Users.save($scope.user, function(){
                 $location.path('/');
             });
             $scope.user = {};
-            // alert($scope.errorinfo);
-            // console.log($scope.errorinfo);
         };
     }]);
 

@@ -4,7 +4,7 @@ $(document).ready(function() {
     var text3 = document.createElement("span");
     $("input#username").after(text1);  
     $("input#password").after(text2);
-    $("input#email").after(text3);
+    $("input#password").after(text3);
     $("span").hide();   
 
 
@@ -13,15 +13,12 @@ $(document).ready(function() {
     var email = document.getElementById("email");
 
     var validate = true;
-    var errorinfo = "Error:";
-
 
   $("input#username").blur(function(){
 
     if(!validate_notempty(username)){   //empty field
         validate = false;
         text1.innerHTML = "username cannot be empty";
-        errorinfo.concat("* username cannot be empty");
         $(text1).show();
         }else{
             validate = true;
@@ -29,20 +26,19 @@ $(document).ready(function() {
         }
   });
 
-
     $("input#password").blur(function(){
 
         if(!validate_notempty(password)){   //empty field
         validate = false;
         text2.innerHTML = "password cannot be empty";
-        errorinfo.concat("* password cannot be empty");
         $(text2).show();
         }else{
             validate = true;
             $(text2).hide();
+            text3.innerHTML = checkStrength(password);
+            $(text3).show();
         }
   });
-
 
     
     function validate_notempty(field){
@@ -57,7 +53,31 @@ $(document).ready(function() {
               }
             }
     }
+
+    function checkStrength(password) {
+        var strength = 0
+        if (password.length > 7) strength += 1
+        var re1 = /([a-z].*[A-Z])|([A-Z].*[a-z])/;
+        var re2 = /([a-zA-Z])/;
+        var re3 = /([0-9])/;
+        var re4 = /([!,%,&,@,#,$,^,*,?,_,~])/;
+        var re5 = /(.*[!,%,&,@,#,$,^,*,?,_,~].*[!,%,&,@,#,$,^,*,?,_,~])/;
+
+        if (re1.test(password.value)) strength += 1
+        // If it has numbers and characters, increase strength value.
+        if (re2.test(password.value) && re3.test(password.value)) strength += 1
+        // If it has one special character, increase strength value.
+        if (re4.test(password.value)) strength += 1
+        // If it has two special characters, increase strength value.
+        if (re5.test(password.value)) strength += 1
+        
+        if (strength < 2) {
+            return 'password strength: Weak'
+        } else if (strength == 2) {
+            return 'password strength: Good'
+        } else {
+            return 'password strength: Strong'
+        }
+    }
     
-    $("#validate").attr("value",validate);
-    $("#errorinfo").attr("value",errorinfo);
 });
