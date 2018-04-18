@@ -1,5 +1,6 @@
 
 	<div class="header clearfix">
+		<a href="/#/cart" class="btn btn-primary" role="button" id="cart">Cart</a> 
 		<button type="button" class="btn btn-default btn-sm" id="login" ng-click="jump()">
             <span class="glyphicon glyphicon-user"></span> User
         </button>
@@ -27,7 +28,7 @@
 							<h3>{{d.name}}</h3>
 							<p>{{d.description}}</p>
 							<p>
-								<a href="/#/cart" class="btn btn-primary" role="button" id="cart">
+								<a href="/#/cart/{{d._id}}" class="btn btn-primary" role="button" id="cart">
 									Cart
 								</a> 
 								<a href="#/" class="btn btn-default" role="button" id="edit">

@@ -37,7 +37,11 @@ app.config(['$routeProvider', function($routeProvider){
         templateUrl: 'partials/cart.html',
     	controller: 'CartCtrl'
     })
-    .when('/cart/delete/:id', {
+    .when('/cart/:id', {
+        templateUrl: 'partials/temp.html',
+        controller: 'AddCartCtrl'
+    })
+    .when('/cart/delete/:id', {   // gai! 
         templateUrl: 'partials/delete-cart.html',
         controller: 'DeleteCartCtrl'
     })
@@ -161,6 +165,15 @@ app.controller('CartCtrl', ['$scope', '$resource',
         });
     }]);
 
+
+app.controller('AddCartCtrl', ['$scope', '$resource', '$routeParams',
+    function($scope, $resource, $routeParams){
+        var Dish = $resource('/api/dish/:id');
+        Dish.get({ id: $routeParams.id }, function(dish){
+            $scope.dish = dish;
+        })
+        
+    }]);
 
 app.controller('DeleteCartCtrl', ['$scope', '$resource', '$location', '$routeParams',
     function($scope, $resource, $location, $routeParams){

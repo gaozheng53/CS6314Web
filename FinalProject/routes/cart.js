@@ -13,17 +13,24 @@ router.get('/', function(req, res) {
 });
 
 router.post('/', function(req, res){
+    console.log("/");
+});
+
+router.post('/:id', function(req, res){
+    console.log("/:id");
     var collection = db.get('Cart');
     collection.insert({
         username: "Zheng",
         name: req.body.dishname,
         price: req.body.price,
-        count: req.body.count       
+        count: 1     
     }, function(err, cart){
         if (err) throw err;
         res.json(cart);
     });
 });
+
+
 
 router.delete('/:id', function(req, res){
     var collection = db.get('Cart');
