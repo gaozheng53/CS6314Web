@@ -1,0 +1,48 @@
+
+	<div class="header clearfix">
+		<a href="/#/cart" class="btn btn-primary" role="button" id="cart">Cart</a> 
+		<button type="button" class="btn btn-default btn-sm" id="login" ng-click="jump()">
+            <span class="glyphicon glyphicon-user"></span> User
+        </button>
+	</div>
+	<div class="container" id="content">
+		<div class="container" id="navigation">
+			<ul class="nav nav-tabs nav-justified">
+				<li class="active"><a href="/#/details">Home</a></li>
+				<li><a href="/#/Appetizer">Appetizer</a></li>
+				<li><a href="/#/Entree">Entree</a></li>
+				<li><a href="/#/Soup">Soup</a></li>
+				<li><a href="/#/Dessert">Dessert</a></li>
+				<li><a href="/#/Combo">Combo</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="container" id="details">
+		<h1>Most Popular</h1>
+		<div class="container" id="menu">
+			<div class="row">
+				<div ng-repeat='d in dish' class="col-sm-8 col-md-4" id="dishes">
+					<div class="thumbnail">
+						<img src="{{d.picture}}" alt="通用的占位符缩略图">
+						<div class="caption">
+							<h3>{{d.name}}</h3>
+							<p>{{d.description}}</p>
+							<p>
+								<!-- <a href="/#/cart/{{d._id}}" class="btn btn-primary" role="button" id="cart">
+									Cart
+								</a>  -->
+								<input type="button" name="cart" ng-click="addDish(d)" value="Add to Cart"/>
+								<!-- <a href="#/" class="btn btn-default" role="button" id="edit">
+									Edit
+								</a> -->
+							</p>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	<div class="footer clearfix"></div>
+
+

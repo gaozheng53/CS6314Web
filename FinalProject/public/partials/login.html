@@ -8,31 +8,34 @@
             <div class="container">
                 <p>Begin your order right now!</p>
                 <div class="container" id="olduser">
-                	<form>
-                		<div class="form-group input-group-lg">
-                			<caption>Returning Customers</caption>
-                		</div>
-                		<div class="form-group input-group-lg">
-                			<input class="form-control" placeholder="Email"></input>
-                		</div>
-                		<div class="form-group input-group-lg">
-                			<input class="form-control" placeholder="Password"></input>
-                		</div>
-                		<div class="form-group input-group-lg">
-                			<button type="button" class="btn btn-info btn-block btn-lg" ng-click="submit()">Login</button>
-                		</div>
-                		<div class="form-group input-group-lg">
-                			<p>Forget your password?</p>
-                		</div>
-                	</form>
+                    <form>
+                        <div class="form-group input-group-lg">
+                            <caption>Returning Customers</caption>
+                        </div>
+                        <div class="form-group input-group-lg">
+                            <input class="form-control" placeholder="Username" ng-model="user.username"></input>
+                        </div>
+                        <div class="form-group input-group-lg">
+                            <input class="form-control" type="password" placeholder="Password" ng-model="user.password"></input>
+                        </div>
+                        <div class="form-group input-group-lg">
+                            <button type="button" class="btn btn-info btn-block btn-lg" ng-click="submit()">Login</button>
+                        </div>
+                        <div class="form-group input-group-lg">
+                            <p>Forget your password?</p>
+                        </div>
+                    </form>
                 </div>
                 <div class="container" id="newuser">
-                	<div class="form-group input-group-lg">
-                			<caption>First Time User?</caption>
-                		</div>
-                		<div class="form-group input-group-lg">
-                			<button type="button" class="btn btn-success btn-block btn-lg" ng-click="signup()">Sign up now!</button>
-                		</div>
+                    <div class="form-group input-group-lg">
+                            <caption>First Time User?</caption>
+                        </div>
+                        <div class="form-group input-group-lg">
+                            <button type="button" class="btn btn-success btn-block btn-lg" ng-click="signup()">Sign up now!</button>
+                        </div>
+                        <div class="form-group input-group-lg">
+                            <button type="button" class="btn btn-success btn-block btn-lg" ng-click="logout()">logout</button>
+                        </div>
                 </div>
             </div>
         </div>

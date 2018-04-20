@@ -8,15 +8,16 @@ router.get('/', function(req, res) {
     var collection = db.get('User');
     collection.find({}, function(err, users){
         if (err) throw err;
-      	res.json(users);
+        res.json(users);
     });
 });
 
+// create an account
 router.post('/', function(req, res){
     var collection = db.get('User');
     collection.insert({
         username: req.body.username,
-        authority: 0,
+        authority: 1,
         password: req.body.password,
         name: req.body.name,
         phone: req.body.phone,
@@ -26,6 +27,14 @@ router.post('/', function(req, res){
     }, function(err, user){
         if (err) throw err;
         res.json(user);
+    });
+    // initial this user's cart
+    var collection_cart = db.get('Cart');
+    collection_cart.insert({
+        username: req.body.username,
+        items: {}
+    },function(err,cart){
+        if(err) throw err;
     });
 });
 

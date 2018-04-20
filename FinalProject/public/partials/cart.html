@@ -18,14 +18,16 @@
 			</thead>
 			<tbody>
 				<tr ng-repeat='c in cart'>
-					<td>{{c.dish_name}}</td>
+					<td>{{c.name}}</td>
 					<td>${{c.price}}</td>
-					<td>{{c.count}}</td>
-					<td>${{c.price*c.count}}</td>
+					<td><input type="number" name="input" value="{{c.qty}}" min="0" max="99" ng-model="count" required>
+						</td>
+					<td>${{c.price*c.qty}}</td>
 					<td>
 						<a href="/#/cart/delete/{{c._id}}"><input type="button" value="Delete" class="btn btn-xs btn-danger"/></a>
 					</td>
 				</tr>
+				
 			</tbody>
 		</table>
 		<button class="btn btn-primary">Confirmation</button>

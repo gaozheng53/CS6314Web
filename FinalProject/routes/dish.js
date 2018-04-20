@@ -8,7 +8,7 @@ router.get('/', function(req, res) {
     var collection = db.get('Menu');
     collection.find({}, function(err, dish){
         if (err) throw err;
-      	res.json(dish);
+        res.json(dish);
     });
 });
 
@@ -38,6 +38,7 @@ router.get('/:id', function(req, res) {
     });
 });
 
+// update dish
 router.put('/:id', function(req, res){
     var collection = db.get('Menu');
     collection.update({
