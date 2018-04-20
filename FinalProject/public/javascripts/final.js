@@ -41,10 +41,6 @@ app.config(['$routeProvider', function($routeProvider){
         templateUrl: 'partials/cart.html',
         controller: 'CartCtrl'
     })
-    .when('/cart/:id', {
-        templateUrl: 'partials/temp.html',
-        controller: 'AddCartCtrl'
-    })
     .when('/cart/delete/:id', {    
         templateUrl: 'partials/delete-cart.html',
         controller: 'DeleteCartCtrl'
@@ -237,9 +233,6 @@ app.controller('CartCtrl', ['$scope', '$resource', '$rootScope',
     }]);
 
 
-app.controller('AddCartCtrl', ['$scope', '$resource', '$routeParams','$rootScope','$window',
-    function($scope, $resource, $routeParams,$rootScope,$window){
-    }]);
 
 
 app.controller('DeleteCartCtrl', ['$scope', '$resource', '$location', '$routeParams',
