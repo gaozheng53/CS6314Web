@@ -17,7 +17,7 @@ router.post('/', function(req, res){
     var collection = db.get('User');
     collection.insert({
         username: req.body.username,
-        authority: 1,
+        authority: 0,
         password: req.body.password,
         name: req.body.name,
         phone: req.body.phone,

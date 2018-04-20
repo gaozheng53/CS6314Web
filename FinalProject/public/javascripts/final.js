@@ -262,8 +262,9 @@ app.controller('LoginCtrl', ['$scope', '$resource', '$location', '$rootScope',
     function($scope, $resource, $location, $rootScope){
         $scope.submit = function() {
             var Users = $resource('/api/login');
-            //$scope.user['password'] = md5($scope.user['password']);
+            $scope.user['password'] = md5($scope.user['password']);
             console.log($scope.user);
+
             Users.save($scope.user, function(res){
                if(res['result'] === 1){
 
