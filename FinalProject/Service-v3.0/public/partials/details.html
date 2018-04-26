@@ -1,0 +1,94 @@
+<nav class="navbar navbar-custom" role="navigation" id="navbar">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#/">EAT24</a>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+            <li ng-hide="auth==0" style="font-size: 25px;">Hi,{{user}}</li>
+            <!-- <li>登录状态：{{auth}}</li> -->
+            <li ng-hide="auth==0||auth==2"><a href="/#/cart"><span class="glyphicon glyphicon-shopping-cart"></span></a></li>
+            <li ng-hide="auth==0" class="dropdown">
+                <a href="" class="dropdown-toggle" data-toggle="dropdown">
+                    <span class="glyphicon glyphicon-user"></span>
+                    <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="/#/editinfo"><span class="glyphicon glyphicon-user"></span> User Center</a></li>
+                    <li ng-hide="auth==2"><a href="/#/orderhistory"><span class="glyphicon glyphicon-list-alt"></span> Order History</a></li>
+                    <li><a href="#/editpassword"><span class="glyphicon glyphicon-cog"></span> Security</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#/" ng-click="logout()"><span class="glyphicon glyphicon-log-out"></span> Log Out</a></li>
+                </ul>
+            <li ng-hide="auth==1||auth==2"><a href="/#/login"><span class="glyphicon glyphicon-log-in"></span> LogIn/SignUp</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div class="container" id="content">
+    <div class="container" id="navigation">
+
+    </div>
+</div>
+
+<div class="container" id="details">
+    <div id="leftnav">
+        <div>
+            <input type="text" ng-model="keyword" placeholder="Search for..." id="searchbox">
+            <hr>
+        </div>
+        <div>
+            <h2>Category</h2>
+        </div>
+        <div ng-repeat="cate in category" class="checkbox-custom">
+            <input type="checkbox" name="{{cate.tag}}" ng-click="updateSelection($event)">
+            <label>{{cate.tag}}</label>
+        </div>
+        <div>
+            <hr>
+            <a ng-hide="auth==1||auth==0" href="#/addnew" class="btn btn-info" role="button">
+                Add new dish
+            </a>
+        </div>
+    </div>
+    <div class="container" id="menu">
+        <div class="row">
+            <div ng-hide="d.stock==0&&auth==1" class="col-md-3" id="dishes" ng-repeat="d in dish | filter : func | filter : keyword">
+                <div class="thumbnail">
+                    <img src="{{d.picture}}" alt="通用的占位符缩略图">
+                    <div class="caption">
+                        <h3>{{d.name}}</h3>
+                        <h4>●{{d.class}}</h4>
+                        <h4 ng-show="auth==2&&d.stock==0" style="color: red;">Not Available</h4>
+                        <h4 ng-hide="auth==2&&d.stock==0">●${{d.price}}</h4>
+                        <p>
+                            <a ng-hide="auth==2" class="btn btn-primary" role="button" id="cart"
+                               ng-click="addtocart(d,user)">
+                                Add to Cart
+                            </a>
+                            <a ng-hide="auth==1" href="/#/editdish/{{d._id}}" class="btn btn-info" role="button" id="edit">
+                                Edit
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- <div>
+        <p>Hi,{{user}}</p>
+        <p>登录状态：{{auth}}</p>
+    </div>
+    <div>
+        <a href="/#/cart">cart</a>
+    </div> -->
+    <!-- <div>
+        <div ng-repeat = "cate in category">
+            <input type="checkbox" name="{{cate.tag}}" ng-click="updateSelection($event)">
+            {{cate.tag}}
+        </div>
+        <div>
+            <input type="text" ng-model = "keyword">
+        </div>
+    </div> -->

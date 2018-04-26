@@ -1,0 +1,68 @@
+<nav class="navbar navbar-custom" role="navigation" id="navbar">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#/">EAT24</a>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+            <li ng-hide="auth==0" style="font-size: 25px;">Hi,{{user}}</li>
+            <!-- <li>登录状态：{{auth}}</li> -->
+            <li ng-hide="auth==0||auth==2"><a href="/#/cart"><span class="glyphicon glyphicon-shopping-cart"></span></a></li>
+            <li ng-hide="auth==0" class="dropdown">
+                <a href="" class="dropdown-toggle" data-toggle="dropdown">
+                    <span class="glyphicon glyphicon-user"></span>
+                    <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="/#/editinfo"><span class="glyphicon glyphicon-user"></span> User Center</a></li>
+                    <li ng-hide="auth==2"><a href="/#/orderhistory"><span class="glyphicon glyphicon-list-alt"></span> Order History</a></li>
+                    <li><a href="#/editpassword"><span class="glyphicon glyphicon-cog"></span> Security</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#/" ng-click="logout()"><span class="glyphicon glyphicon-log-out"></span> Log Out</a></li>
+                </ul>
+            <li ng-hide="auth==1||auth==2"><a href="/#/login"><span class="glyphicon glyphicon-log-in"></span> LogIn/SignUp</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div class="container" id="content">
+</div>      
+<div class="container" id="details">
+    <h1>Order History</h1>
+    <div class="container" id="navleft">
+        <ul class="nav nav-pills nav-stacked">
+            <li><a href="#/editinfo">User Information</a></li>
+            <li ng-hide="auth==2"><a href="#/orderhistory">Order History</a></li>
+            <li><a href="#/editpassword">Security</a></li>
+            <li><a href="#/details">Back to Menu</a></li>
+        </ul>
+    </div>
+    <div class="container" id="ccontent">
+        <table class="table table-custom table-hover">
+            <thead>
+            <tr>
+                <th>Dishes</th>
+                <th>Date</th>
+                <th>Price</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr ng-repeat="order in orderhistory">
+                <td>
+                    <table>
+                        <tr ng-repeat="item in order.items">
+                            <td>{{item.name}} X {{item.qty}}</td>
+                        </tr>
+                    </table>
+                </td>
+                <td>{{order.time}}</td>
+                <td>$ {{order.totalprice}}</td>
+
+            </tr>
+            </tbody>
+        </table>
+        
+    </div>
+</div>
+
+
+

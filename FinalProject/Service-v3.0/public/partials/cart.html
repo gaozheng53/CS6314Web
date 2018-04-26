@@ -1,0 +1,80 @@
+<nav class="navbar navbar-custom" role="navigation" id="navbar">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#/">EAT24</a>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+            <li ng-hide="auth==0" style="font-size: 25px;">Hi,{{user}}</li>
+            <!-- <li>登录状态：{{auth}}</li> -->
+            <li ng-hide="auth==0||auth==2"><a href="/#/cart"><span class="glyphicon glyphicon-shopping-cart"></span></a></li>
+            <li ng-hide="auth==0" class="dropdown">
+                <a href="" class="dropdown-toggle" data-toggle="dropdown">
+                    <span class="glyphicon glyphicon-user"></span>
+                    <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="/#/editinfo"><span class="glyphicon glyphicon-user"></span> User Center</a></li>
+                    <li ng-hide="auth==2"><a href="/#/orderhistory"><span class="glyphicon glyphicon-list-alt"></span> Order History</a></li>
+                    <li><a href="#/editpassword"><span class="glyphicon glyphicon-cog"></span> Security</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#/" ng-click="logout()"><span class="glyphicon glyphicon-log-out"></span> Log Out</a></li>
+                </ul>
+            <li ng-hide="auth==1||auth==2"><a href="/#/login"><span class="glyphicon glyphicon-log-in"></span> LogIn/SignUp</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div class="container" id="content">
+    <div class="container" id="navigation">
+
+    </div>
+</div>
+<div class="container" id="details">
+	<div class="container" id="editmenu">
+		<div class="container">
+			<h1>Cart</h1>
+		</div>
+		<div class="container">
+			<table class="table table-custom" >
+				<thead>
+					<tr>
+						<th>Dish Name</th>
+						<th>Dish Price</th>
+						<th>Dish Quantity</th>
+						<th>Subtotal</th>
+						<th>Remove</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr ng-repeat='item in cart'>
+						<td>{{item.name}}</td>
+						<td>${{item.price}}</td>
+						<td>
+							<button ng-click="incr(item,user)">+</button>
+							<input style="width:30px" type="text" ng-model="item.qty" readonly>
+							<button ng-click="decr(item,user)">-</button>
+						</td>
+						<td>${{item.price*item.qty}}</td>
+						<td>
+							<a ng-click = "deletedish(item,user)"><span class="glyphicon glyphicon-remove"></span></a>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<hr>
+		<div class="container" id="row-cart">
+			<div class="row">
+				<div class="col-md-7">
+				</div>
+				<div class="col-md-5">
+					<p>Total Price：$<span id="totalprice"></span></p>
+				</div>
+			</div>
+		</div>
+		<div class="container" id="cartbutton">
+			<a class="btn btn-info btn-lg" ng-click = "confirmation(cart,user)">Confirmation</a>
+			<a class="btn btn-info btn-lg" href="#/details"><span class="glyphicon glyphicon-arrow-left"></span>Back to Menu</a>
+		</div>
+	</div>
+</div>

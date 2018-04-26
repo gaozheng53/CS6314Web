@@ -1,0 +1,38 @@
+<nav class="navbar navbar-custom" role="navigation" id="navbar">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#/">EAT24</a>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+            <li ng-hide="auth==0" style="font-size: 25px;">Hi,{{user}}</li>
+            <!-- <li>登录状态：{{auth}}</li> -->
+            <li ng-hide="auth==0||auth==2"><a href="/#/cart"><span class="glyphicon glyphicon-shopping-cart"></span></a></li>
+            <li ng-hide="auth==0" class="dropdown">
+                <a href="" class="dropdown-toggle" data-toggle="dropdown">
+                    <span class="glyphicon glyphicon-user"></span>
+                    <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="/#/editinfo"><span class="glyphicon glyphicon-user"></span> User Center</a></li>
+                    <li ng-hide="auth==2"><a href="/#/orderhistory"><span class="glyphicon glyphicon-list-alt"></span> Order History</a></li>
+                    <li><a href="#/editpassword"><span class="glyphicon glyphicon-cog"></span> Security</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#/" ng-click="logout()"><span class="glyphicon glyphicon-log-out"></span> Log Out</a></li>
+                </ul>
+            <li ng-hide="auth==1||auth==2"><a href="/#/login"><span class="glyphicon glyphicon-log-in"></span> LogIn/SignUp</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div class="container" id="welcome">
+    <div class="container" id="homestart">
+        <div class="container">
+            <p>Begin your order right now!</p>
+        </div>
+        <div class="container">
+            <button type="button" class="btn btn-primary btn-lg" id="button1" ng-click="jump('/#/details')">Order
+            </button>
+        </div>
+    </div>
+</div>
+<div class="footer clearfix"></div>

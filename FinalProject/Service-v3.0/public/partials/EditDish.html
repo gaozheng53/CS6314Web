@@ -1,0 +1,77 @@
+<nav class="navbar navbar-custom" role="navigation" id="navbar">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#/">EAT24</a>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+            <li ng-hide="auth==0" style="font-size: 25px;">Hi,{{user}}</li>
+            <!-- <li>登录状态：{{auth}}</li> -->
+            <li ng-hide="auth==0||auth==2"><a href="/#/cart"><span class="glyphicon glyphicon-shopping-cart"></span></a></li>
+            <li ng-hide="auth==0" class="dropdown">
+                <a href="" class="dropdown-toggle" data-toggle="dropdown">
+                    <span class="glyphicon glyphicon-user"></span>
+                    <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="/#/editinfo"><span class="glyphicon glyphicon-user"></span> User Center</a></li>
+                    <li ng-hide="auth==2"><a href="/#/orderhistory"><span class="glyphicon glyphicon-list-alt"></span> Order History</a></li>
+                    <li><a href="#/editpassword"><span class="glyphicon glyphicon-cog"></span> Security</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#/" ng-click="logout()"><span class="glyphicon glyphicon-log-out"></span> Log Out</a></li>
+                </ul>
+            <li ng-hide="auth==1||auth==2"><a href="/#/login"><span class="glyphicon glyphicon-log-in"></span> LogIn/SignUp</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+      <div class="container" id="content">
+      <div class="container" id="navigation">
+         
+      </div>
+   </div>
+
+   <div class="container" id="details">
+    <div class="container" id="editmenu">
+        <div class="container">
+            <h1>Edit the Dish</h1>
+         </div>
+        <div class="container">
+            <div class="col-md-12">
+               <img ng-src="{{imageSrc}}" style="max-width:500px;max-height:500px;margin:10px auto;display:block;" />
+               <img ng-hide="file" src="{{dish.picture}}" style="max-width:500px;max-height:500px;margin:10px auto;display:block;" />
+            </div>
+            <div class="container">
+               <input type="file" file-model="myFile" class="se"/>
+            </div>
+        </div>
+        <div class="container">
+           <form>
+            <div class="form-group">
+                <label>Dish name</label>
+                <input class="form-control" ng-model="dish.name"></input>
+            </div>
+            <div class="form-group">
+                <label>Dish Category</label>
+                <select ng-init="dish.class" ng-model="dish.class" ng-options="x for x in category">
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Dish Price</label>
+                <input class="form-control" ng-model="dish.price"></input>
+            </div>
+            <div class="form-group">
+                <label>Dish Stock</label>
+                <input class="form-control" ng-model="dish.stock"></input>
+            </div>
+            <div class="form-group">
+                <label>Dish Description</label>
+                <textarea class="form-control" ng-model="dish.description"></textarea>
+            </div>
+            <div class="form-group">
+                <input type="button" class="btn btn-info btn-block btn-lg" value="Save" ng-click="save(dish)"></input>
+            </div>
+        </form> 
+    </div>
+    </div>
+</div>
+</div>

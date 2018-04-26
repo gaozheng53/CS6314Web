@@ -1,0 +1,44 @@
+<nav class="navbar navbar-custom" role="navigation" id="navbar">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#/">EAT24</a>
+            </div>
+        </div>
+</nav>
+<div class="container" id="user">
+        <div class="container" id="register">
+                <p>Begin your order right now!</p>
+                <div class="container" id="olduser">
+                	<form name="loginForm" novalidate>
+                		<div class="form-group input-group-lg">
+                			<caption>Returning Customers</caption>
+                		</div>
+                		<div class="form-group input-group-lg">
+                			<input type="text" id="username"
+                			ng-model="credentials.username"
+                			class="form-control" placeholder="Username..."></input>
+                		</div>
+                		<div class="form-group input-group-lg">
+                			<input type="password" id="password"
+                            ng-model="credentials.password"
+                            class="form-control" placeholder="Password"></input>
+                		</div>
+                		<div class="form-group input-group-lg">
+                			<button type="button" class="btn btn-info btn-block btn-lg" ng-click="login(credentials)">Login</button>
+                		</div>
+                		<div class="form-group input-group-lg">
+                			<p>Forget your password?</p>
+                		</div>
+                	</form>
+                </div>
+                <div class="container" id="newuser">
+                	<div class="form-group input-group-lg">
+                			<caption>First Time User?</caption>
+                		</div>
+                		<div class="form-group input-group-lg">
+                			<button type="button" class="btn btn-success btn-block btn-lg" ng-click="jump('/#/signup')">Sign up now!</button>
+                		</div>
+                </div>
+        </div>
+    </div>
+    <div class="footer clearfix"></div>

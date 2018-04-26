@@ -1,0 +1,149 @@
+<nav class="navbar navbar-custom" role="navigation" id="navbar">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#/">EAT24</a>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+            <li ng-hide="auth==0" style="font-size: 25px;">Hi,{{user}}</li>
+            <!-- <li>登录状态：{{auth}}</li> -->
+            <li ng-hide="auth==0||auth==2"><a href="/#/cart"><span class="glyphicon glyphicon-shopping-cart"></span></a></li>
+            <li ng-hide="auth==0" class="dropdown">
+                <a href="" class="dropdown-toggle" data-toggle="dropdown">
+                    <span class="glyphicon glyphicon-user"></span>
+                    <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="/#/editinfo"><span class="glyphicon glyphicon-user"></span> User Center</a></li>
+                    <li ng-hide="auth==2"><a href="/#/orderhistory"><span class="glyphicon glyphicon-list-alt"></span> Order History</a></li>
+                    <li><a href="#/editpassword"><span class="glyphicon glyphicon-cog"></span> Security</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#/" ng-click="logout()"><span class="glyphicon glyphicon-log-out"></span> Log Out</a></li>
+                </ul>
+            <li ng-hide="auth==1||auth==2"><a href="/#/login"><span class="glyphicon glyphicon-log-in"></span> LogIn/SignUp</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div class="container" id="content">
+</div>
+<div class="container" id="details">
+    <h1>User Center</h1>
+    <div class="container" id="navleft">
+        <ul class="nav nav-pills nav-stacked">
+            <li><a href="#/editinfo">User Information</a></li>
+            <li ng-hide="auth==2"><a href="#/orderhistory">Order History</a></li>
+            <li><a href="#/editpassword">Security</a></li>
+            <li><a href="#/details">Back to Menu</a></li>
+        </ul>
+    </div>
+    <div class="container" id="ccontent">
+        <div class="row">
+            <div class="col-md-2">
+                <!-- <img src="../images/套餐.png" class="img-circle"> -->
+            </div>
+            <div class="col-md-2">
+                <img src="../images/user.png" class="img-circle">
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label">Username</label>
+                        <div class="col-sm-8">
+                            <input  id="username" class="form-control required"  ng-model="userobj.username"></input>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label">Name</label>
+                        <div class="col-sm-8">
+                            <input id="name" class="form-control" ng-model="userobj.name"></input>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label">Phone</label>
+                        <div class="col-sm-8">
+                            <input id="phone" class="form-control" ng-model="userobj.phone"></input>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label">E-mail</label>
+                        <div class="col-sm-8">
+                            <input id="email" class="form-control" ng-model="userobj.email"></input>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label">Address</label>
+                        <div class="col-sm-8">
+                            <textarea id="address" class="form-control" ng-model="userobj.address"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" id="cartbutton">
+                    <div class="form-group">
+                        <a class="btn btn-info btn-lg" ng-click="save()" >Save</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <!-- <img src="../images/套餐.png" class="img-circle"> -->
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <h1>Edit Account Infomation</h1>
+Hi, {{user}} !
+<form id="sign-up-form" style="width: 400px">
+    <div class="form-group">
+        <label>username</label>
+        <input  id="username" class="form-control required"  ng-model="userobj.username"></input>
+    </div>
+    <div class="form-group">-->
+        <!--<label>password</label>-->
+        <!--<input id="password" type="password" class="form-control" ng-model="userobj.password"></input>-->
+    <!--</div>-->
+    <!-- <div class="form-group">
+        <label>name</label>
+        <input id="name" class="form-control" ng-model="userobj.name"></input>
+    </div>
+    <div class="form-group">
+        <label>phone</label>
+        <input id="phone" class="form-control" ng-model="userobj.phone"></input>
+    </div>
+    <div class="form-group">
+        <label>email</label>
+        <input id="email" class="form-control" ng-model="userobj.email"></input>
+    </div>
+    <div class="form-group">
+        <label>avatar</label>
+        <input id="avatar" class="form-control" ng-model="userobj.avatar"></input>
+    </div>
+    <div class="form-group">
+        <label>address</label>
+        <textarea id="address" class="form-control" ng-model="userobj.address"></textarea>
+    </div>
+
+    <a ng-click="save()">Save</a>
+    <!--<input type="button" id="submit-signup" class="btn btn-primary" value="Save" ></input>-->
+<!-- </form>  --> -->
+
+
+
