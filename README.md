@@ -37,6 +37,13 @@ Based on practice work 4, add login check and display user's data in database.
 # PW-7 Flickr (php)
 connect to Flickr's API and display the result in page.
 
+# Final Project (MEAN stack)
+MEAN stack: MongoDB + Express + AngularJS + Node.js
+- How to run:
+	- basic environment install:[install](https://blog.udemy.com/node-js-tutorial/)
+	- In the project root directory, run `nodemon`
+	- index URL: [homepage](http://localhost:3000/)
+
 # Feedback for TA
 1. hw1: -2: Footer is not at the bottom of the page.﻿﻿﻿﻿﻿﻿﻿﻿
 2. hw2: -3: When the input field receives focus, the info message should be shown. The submission shows an info message only when the input field receives focus and is valid and not empty.
