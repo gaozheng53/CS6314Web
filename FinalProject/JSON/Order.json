@@ -1,0 +1,554 @@
+{
+    "_id" : ObjectId("5adc4e2ec9885e4adbd7a4c1"),
+    "username" : "Jason",
+    "orders" : [
+        {
+            "items" : {
+                "5ad0246c8c8d5e3b9afe4fbd" : {
+                    "_id" : ObjectId("5ad0246c8c8d5e3b9afe4fbd"),
+                    "name" : "tiramisu",
+                    "class" : "Desserts",
+                    "picture" : "../images/tiramisu.jpg",
+                    "price" : 13,
+                    "stock" : "6",
+                    "description" : "Tiramisu is a popular coffee-flavoured Italian dessert. It is made of ladyfingers dipped in coffee, layered with a whipped mixture of eggs, sugar, and mascarpone cheese, flavoured with cocoa.",
+                    "qty" : 2
+                },
+                "5ad229921e96b547b4a9684e" : {
+                    "_id" : ObjectId("5ad229921e96b547b4a9684e"),
+                    "name" : "Shrimp Dumpling",
+                    "class" : "Dessert",
+                    "picture" : "../images/xiajiao.jpg",
+                    "price" : 10,
+                    "stock" : "8",
+                    "description" : "The dumpling is sometimes called a shrimp bonnet for its pleated shape. This dish is often served together with siumaai.",
+                    "qty" : 3
+                }
+            },
+            "totalprice" : 56,
+            "time" : "4/22/2018 3:55:27 AM"
+        },
+        {
+            "items" : {
+                "5ad229921e96b547b4a9684e" : {
+                    "_id" : ObjectId("5ad229921e96b547b4a9684e"),
+                    "name" : "Shrimp Dumpling",
+                    "class" : "Dessert",
+                    "picture" : "../images/xiajiao.jpg",
+                    "price" : 10,
+                    "stock" : "8",
+                    "description" : "The dumpling is sometimes called a shrimp bonnet for its pleated shape. This dish is often served together with siumaai.",
+                    "qty" : 4
+                },
+                "5ac8d81e846d7ab285b29546" : {
+                    "_id" : ObjectId("5ac8d81e846d7ab285b29546"),
+                    "name" : "Fish Filets in Hot Chili Oil",
+                    "class" : "Sichuan cuisine",
+                    "picture" : "../images/shuizhuyu.jpg",
+                    "price" : 35,
+                    "stock" : 16,
+                    "description" : "Boiled fish is usually made from fresh grass carp, bean sprouts, pepper and other ingredients. Oil but not greasy, spicy but not dry, hemp without bitter, tender and tender is its characteristic.",
+                    "qty" : 2
+                },
+                "5ad0246c8c8d5e3b9afe4fbd" : {
+                    "_id" : ObjectId("5ad0246c8c8d5e3b9afe4fbd"),
+                    "name" : "tiramisu",
+                    "class" : "Desserts",
+                    "picture" : "../images/tiramisu.jpg",
+                    "price" : 13,
+                    "stock" : "6",
+                    "description" : "Tiramisu is a popular coffee-flavoured Italian dessert. It is made of ladyfingers dipped in coffee, layered with a whipped mixture of eggs, sugar, and mascarpone cheese, flavoured with cocoa.",
+                    "qty" : 1
+                }
+            },
+            "time" : "4/22/2018 11:07:01 AM",
+            "totalprice" : 123
+        },
+        {
+            "items" : {
+                "5ad229921e96b547b4a9684e" : {
+                    "_id" : ObjectId("5ad229921e96b547b4a9684e"),
+                    "name" : "Shrimp Dumpling",
+                    "class" : "Dessert",
+                    "picture" : "../images/xiajiao.jpg",
+                    "price" : 10,
+                    "stock" : "8",
+                    "description" : "The dumpling is sometimes called a shrimp bonnet for its pleated shape. This dish is often served together with siumaai.",
+                    "qty" : 4
+                },
+                "5ac8d81e846d7ab285b29546" : {
+                    "_id" : ObjectId("5ac8d81e846d7ab285b29546"),
+                    "name" : "Fish Filets in Hot Chili Oil",
+                    "class" : "Sichuan cuisine",
+                    "picture" : "../images/shuizhuyu.jpg",
+                    "price" : 35,
+                    "stock" : 16,
+                    "description" : "Boiled fish is usually made from fresh grass carp, bean sprouts, pepper and other ingredients. Oil but not greasy, spicy but not dry, hemp without bitter, tender and tender is its characteristic.",
+                    "qty" : 1
+                },
+                "5ad0246c8c8d5e3b9afe4fbd" : {
+                    "_id" : ObjectId("5ad0246c8c8d5e3b9afe4fbd"),
+                    "name" : "tiramisu",
+                    "class" : "Desserts",
+                    "picture" : "../images/tiramisu.jpg",
+                    "price" : 13,
+                    "stock" : "6",
+                    "description" : "Tiramisu is a popular coffee-flavoured Italian dessert. It is made of ladyfingers dipped in coffee, layered with a whipped mixture of eggs, sugar, and mascarpone cheese, flavoured with cocoa.",
+                    "qty" : 1
+                }
+            },
+            "time" : "4/22/2018 11:08:31 AM",
+            "totalprice" : 88
+        },
+        {
+            "items" : {
+                "5ad0246c8c8d5e3b9afe4fbd" : {
+                    "_id" : ObjectId("5ad0246c8c8d5e3b9afe4fbd"),
+                    "name" : "tiramisu",
+                    "class" : "Desserts",
+                    "picture" : "../images/tiramisu.jpg",
+                    "price" : 13,
+                    "stock" : "6",
+                    "description" : "Tiramisu is a popular coffee-flavoured Italian dessert. It is made of ladyfingers dipped in coffee, layered with a whipped mixture of eggs, sugar, and mascarpone cheese, flavoured with cocoa.",
+                    "qty" : 2
+                },
+                "5ad264f5c9885e4adbd2c31c" : {
+                    "_id" : ObjectId("5ad264f5c9885e4adbd2c31c"),
+                    "name" : "Kung Pao Chicken",
+                    "class" : "Sichuan cuisine",
+                    "picture" : "../images/gongbaojiding.jpg",
+                    "price" : 25,
+                    "stock" : 7,
+                    "description" : "Kung Pao chicken also transcribed as Gong Bao or Kung Po, is a spicy, stir-fried Chinese dish made with chicken, peanuts, vegetables, and chili peppers. The classic dish in Sichuan cuisine originated in the Sichuan Province of south-western China and includes Sichuan peppercorns. ",
+                    "qty" : 2
+                }
+            },
+            "time" : "4/22/2018 11:10:17 AM",
+            "totalprice" : 76
+        },
+        {
+            "items" : {
+                "5ad0246c8c8d5e3b9afe4fbd" : {
+                    "_id" : ObjectId("5ad0246c8c8d5e3b9afe4fbd"),
+                    "name" : "tiramisu",
+                    "class" : "Desserts",
+                    "picture" : "../images/tiramisu.jpg",
+                    "price" : 13,
+                    "stock" : "6",
+                    "description" : "Tiramisu is a popular coffee-flavoured Italian dessert. It is made of ladyfingers dipped in coffee, layered with a whipped mixture of eggs, sugar, and mascarpone cheese, flavoured with cocoa.",
+                    "qty" : 2
+                }
+            },
+            "time" : "4/22/2018 11:11:40 AM",
+            "totalprice" : 26
+        },
+        {
+            "items" : {
+                "5ad0246c8c8d5e3b9afe4fbd" : {
+                    "_id" : ObjectId("5ad0246c8c8d5e3b9afe4fbd"),
+                    "name" : "tiramisu",
+                    "class" : "Desserts",
+                    "picture" : "../images/tiramisu.jpg",
+                    "price" : 13,
+                    "stock" : "6",
+                    "description" : "Tiramisu is a popular coffee-flavoured Italian dessert. It is made of ladyfingers dipped in coffee, layered with a whipped mixture of eggs, sugar, and mascarpone cheese, flavoured with cocoa.",
+                    "qty" : 2
+                },
+                "5ad264f5c9885e4adbd2c31c" : {
+                    "_id" : ObjectId("5ad264f5c9885e4adbd2c31c"),
+                    "name" : "Kung Pao Chicken",
+                    "class" : "Sichuan cuisine",
+                    "picture" : "../images/gongbaojiding.jpg",
+                    "price" : 25,
+                    "stock" : 7,
+                    "description" : "Kung Pao chicken also transcribed as Gong Bao or Kung Po, is a spicy, stir-fried Chinese dish made with chicken, peanuts, vegetables, and chili peppers. The classic dish in Sichuan cuisine originated in the Sichuan Province of south-western China and includes Sichuan peppercorns. ",
+                    "qty" : 3
+                }
+            },
+            "time" : "4/22/2018 2:20:57 PM",
+            "totalprice" : 101
+        },
+        {
+            "items" : {
+                "5ad229921e96b547b4a9684e" : {
+                    "_id" : ObjectId("5ad229921e96b547b4a9684e"),
+                    "name" : "Shrimp Dumpling",
+                    "class" : "Dessert",
+                    "picture" : "../images/xiajiao.jpg",
+                    "price" : 10,
+                    "stock" : "8",
+                    "description" : "The dumpling is sometimes called a shrimp bonnet for its pleated shape. This dish is often served together with siumaai.",
+                    "qty" : 3
+                }
+            },
+            "time" : "4/22/2018 2:21:20 PM",
+            "totalprice" : 30
+        },
+        {
+            "items" : {
+                "5ad0246c8c8d5e3b9afe4fbd" : {
+                    "_id" : ObjectId("5ad0246c8c8d5e3b9afe4fbd"),
+                    "name" : "tiramisu",
+                    "class" : "Desserts",
+                    "picture" : "../images/tiramisu.jpg",
+                    "price" : 13,
+                    "stock" : "6",
+                    "description" : "Tiramisu is a popular coffee-flavoured Italian dessert. It is made of ladyfingers dipped in coffee, layered with a whipped mixture of eggs, sugar, and mascarpone cheese, flavoured with cocoa.",
+                    "qty" : 3
+                },
+                "5ac8d81e846d7ab285b29546" : {
+                    "_id" : ObjectId("5ac8d81e846d7ab285b29546"),
+                    "name" : "Fish Filets in Hot Chili Oil",
+                    "class" : "Sichuan cuisine",
+                    "picture" : "../images/shuizhuyu.jpg",
+                    "price" : 35,
+                    "stock" : 16,
+                    "description" : "Boiled fish is usually made from fresh grass carp, bean sprouts, pepper and other ingredients. Oil but not greasy, spicy but not dry, hemp without bitter, tender and tender is its characteristic.",
+                    "qty" : 1
+                },
+                "5ad264f5c9885e4adbd2c31c" : {
+                    "_id" : ObjectId("5ad264f5c9885e4adbd2c31c"),
+                    "name" : "Kung Pao Chicken",
+                    "class" : "Sichuan cuisine",
+                    "picture" : "../images/gongbaojiding.jpg",
+                    "price" : 25,
+                    "stock" : 7,
+                    "description" : "Kung Pao chicken also transcribed as Gong Bao or Kung Po, is a spicy, stir-fried Chinese dish made with chicken, peanuts, vegetables, and chili peppers. The classic dish in Sichuan cuisine originated in the Sichuan Province of south-western China and includes Sichuan peppercorns. ",
+                    "qty" : 2
+                }
+            },
+            "time" : "4/22/2018 2:21:37 PM",
+            "totalprice" : 124
+        },
+        {
+            "items" : {
+                "5ad229921e96b547b4a9684e" : {
+                    "_id" : ObjectId("5ad229921e96b547b4a9684e"),
+                    "name" : "Shrimp Dumpling",
+                    "class" : "Dessert",
+                    "picture" : "../images/xiajiao.jpg",
+                    "price" : 10,
+                    "stock" : "8",
+                    "description" : "The dumpling is sometimes called a shrimp bonnet for its pleated shape. This dish is often served together with siumaai.",
+                    "qty" : 3
+                }
+            },
+            "time" : "4/22/2018 2:29:14 PM",
+            "totalprice" : 30
+        },
+        {
+            "items" : {
+                "5ac8d81e846d7ab285b29546" : {
+                    "_id" : ObjectId("5ac8d81e846d7ab285b29546"),
+                    "name" : "Fish Filets in Hot Chili Oil",
+                    "class" : "Sichuan cuisine",
+                    "picture" : "../images/shuizhuyu.jpg",
+                    "price" : 35,
+                    "stock" : 16,
+                    "description" : "Boiled fish is usually made from fresh grass carp, bean sprouts, pepper and other ingredients. Oil but not greasy, spicy but not dry, hemp without bitter, tender and tender is its characteristic.",
+                    "qty" : 2
+                },
+                "5ad264f5c9885e4adbd2c31c" : {
+                    "_id" : ObjectId("5ad264f5c9885e4adbd2c31c"),
+                    "name" : "Kung Pao Chicken",
+                    "class" : "Sichuan cuisine",
+                    "picture" : "../images/gongbaojiding.jpg",
+                    "price" : 25,
+                    "stock" : 7,
+                    "description" : "Kung Pao chicken also transcribed as Gong Bao or Kung Po, is a spicy, stir-fried Chinese dish made with chicken, peanuts, vegetables, and chili peppers. The classic dish in Sichuan cuisine originated in the Sichuan Province of south-western China and includes Sichuan peppercorns. ",
+                    "qty" : 3
+                },
+                "5ad229921e96b547b4a9684e" : {
+                    "_id" : ObjectId("5ad229921e96b547b4a9684e"),
+                    "name" : "Shrimp Dumpling",
+                    "class" : "Dessert",
+                    "picture" : "../images/xiajiao.jpg",
+                    "price" : 10,
+                    "stock" : "8",
+                    "description" : "The dumpling is sometimes called a shrimp bonnet for its pleated shape. This dish is often served together with siumaai.",
+                    "qty" : 1
+                }
+            },
+            "time" : "4/22/2018 2:33:05 PM",
+            "totalprice" : 155
+        },
+        {
+            "items" : {
+                "5ad229921e96b547b4a9684e" : {
+                    "_id" : ObjectId("5ad229921e96b547b4a9684e"),
+                    "name" : "Shrimp Dumpling",
+                    "class" : "Dessert",
+                    "picture" : "../images/xiajiao.jpg",
+                    "price" : "15",
+                    "stock" : "0",
+                    "description" : "The dumpling is sometimes called a shrimp bonnet for its pleated shape. This dish is often served together with siumaai.",
+                    "qty" : 3
+                },
+                "5ac8d81e846d7ab285b29546" : {
+                    "_id" : ObjectId("5ac8d81e846d7ab285b29546"),
+                    "name" : "Fish Filets in Hot Chili Oil",
+                    "class" : "Sichuan cuisine",
+                    "picture" : "../images/shuizhuyu.jpg",
+                    "price" : 35,
+                    "stock" : 16,
+                    "description" : "Boiled fish is usually made from fresh grass carp, bean sprouts, pepper and other ingredients. Oil but not greasy, spicy but not dry, hemp without bitter, tender and tender is its characteristic.",
+                    "qty" : 3
+                },
+                "5ad264f5c9885e4adbd2c31c" : {
+                    "_id" : ObjectId("5ad264f5c9885e4adbd2c31c"),
+                    "name" : "Kung Pao Chicken",
+                    "class" : "Sichuan cuisine",
+                    "picture" : "../images/gongbaojiding.jpg",
+                    "price" : 25,
+                    "stock" : 7,
+                    "description" : "Kung Pao chicken also transcribed as Gong Bao or Kung Po, is a spicy, stir-fried Chinese dish made with chicken, peanuts, vegetables, and chili peppers. The classic dish in Sichuan cuisine originated in the Sichuan Province of south-western China and includes Sichuan peppercorns. ",
+                    "qty" : 4
+                }
+            },
+            "time" : "4/22/2018 9:58:03 PM",
+            "totalprice" : 250
+        },
+        {
+            "items" : {
+                "5ad229921e96b547b4a9684e" : {
+                    "_id" : ObjectId("5ad229921e96b547b4a9684e"),
+                    "name" : "Shrimp Dumpling",
+                    "class" : "Dessert",
+                    "picture" : "../images/xiajiao.jpg",
+                    "price" : "15",
+                    "stock" : "0",
+                    "description" : "The dumpling is sometimes called a shrimp bonnet for its pleated shape. This dish is often served together with siumaai.",
+                    "qty" : 3
+                },
+                "5ac8d81e846d7ab285b29546" : {
+                    "_id" : ObjectId("5ac8d81e846d7ab285b29546"),
+                    "name" : "Fish Filets in Hot Chili Oil",
+                    "class" : "Sichuan cuisine",
+                    "picture" : "../images/shuizhuyu.jpg",
+                    "price" : 35,
+                    "stock" : 16,
+                    "description" : "Boiled fish is usually made from fresh grass carp, bean sprouts, pepper and other ingredients. Oil but not greasy, spicy but not dry, hemp without bitter, tender and tender is its characteristic.",
+                    "qty" : 3
+                },
+                "5ad264f5c9885e4adbd2c31c" : {
+                    "_id" : ObjectId("5ad264f5c9885e4adbd2c31c"),
+                    "name" : "Kung Pao Chicken",
+                    "class" : "Sichuan cuisine",
+                    "picture" : "../images/gongbaojiding.jpg",
+                    "price" : 25,
+                    "stock" : 7,
+                    "description" : "Kung Pao chicken also transcribed as Gong Bao or Kung Po, is a spicy, stir-fried Chinese dish made with chicken, peanuts, vegetables, and chili peppers. The classic dish in Sichuan cuisine originated in the Sichuan Province of south-western China and includes Sichuan peppercorns. ",
+                    "qty" : 4
+                }
+            },
+            "time" : "4/22/2018 9:58:39 PM",
+            "totalprice" : 250
+        },
+        {
+            "items" : {
+                "5ad0246c8c8d5e3b9afe4fbd" : {
+                    "_id" : ObjectId("5ad0246c8c8d5e3b9afe4fbd"),
+                    "name" : "tiramisu",
+                    "class" : "Desserts",
+                    "picture" : "../images/tiramisu.jpg",
+                    "price" : 13,
+                    "stock" : "7",
+                    "description" : "Tiramisu is a popular coffee-flavoured Italian dessert. It is made of ladyfingers dipped in coffee, layered with a whipped mixture of eggs, sugar, and mascarpone cheese, flavoured with cocoa.",
+                    "qty" : 3
+                },
+                "5ad264f5c9885e4adbd2c31c" : {
+                    "_id" : ObjectId("5ad264f5c9885e4adbd2c31c"),
+                    "name" : "Kung Pao Chicken",
+                    "class" : "Sichuan cuisine",
+                    "picture" : "../images/gongbaojiding.jpg",
+                    "price" : 25,
+                    "stock" : 5,
+                    "description" : "Kung Pao chicken also transcribed as Gong Bao or Kung Po, is a spicy, stir-fried Chinese dish made with chicken, peanuts, vegetables, and chili peppers. The classic dish in Sichuan cuisine originated in the Sichuan Province of south-western China and includes Sichuan peppercorns. ",
+                    "qty" : 1
+                },
+                "5ac8d81e846d7ab285b29546" : {
+                    "_id" : ObjectId("5ac8d81e846d7ab285b29546"),
+                    "name" : "Fish Filets in Hot Chili Oil",
+                    "class" : "Sichuan cuisine",
+                    "picture" : "../images/shuizhuyu.jpg",
+                    "price" : 35,
+                    "stock" : 3,
+                    "description" : "Boiled fish is usually made from fresh grass carp, bean sprouts, pepper and other ingredients. Oil but not greasy, spicy but not dry, hemp without bitter, tender and tender is its characteristic.",
+                    "qty" : 3
+                }
+            },
+            "time" : "4/22/2018 11:06:05 PM",
+            "totalprice" : 169
+        },
+        {
+            "items" : {
+                "5ad0246c8c8d5e3b9afe4fbd" : {
+                    "_id" : ObjectId("5ad0246c8c8d5e3b9afe4fbd"),
+                    "name" : "tiramisu",
+                    "class" : "Desserts",
+                    "picture" : "../images/tiramisu.jpg",
+                    "price" : 13,
+                    "stock" : 3,
+                    "description" : "Tiramisu is a popular coffee-flavoured Italian dessert. It is made of ladyfingers dipped in coffee, layered with a whipped mixture of eggs, sugar, and mascarpone cheese, flavoured with cocoa.",
+                    "qty" : 2
+                },
+                "5add416b3a2938d9901807c8" : {
+                    "_id" : ObjectId("5add416b3a2938d9901807c8"),
+                    "name" : "Roast Shrimp",
+                    "class" : "Entree",
+                    "picture" : "../images/roastshrimp.jpg",
+                    "price" : 11,
+                    "stock" : 14,
+                    "description" : "A kind of roasted shrimp, covered with breadcrumbs.",
+                    "qty" : 1
+                },
+                "5add35883a2938d99017fd3e" : {
+                    "_id" : ObjectId("5add35883a2938d99017fd3e"),
+                    "name" : "Economic Combo",
+                    "class" : "Combo",
+                    "picture" : "../images/combo1.jpg",
+                    "price" : 25,
+                    "stock" : 7,
+                    "description" : "An economic business combo for fast-paced urban life. ",
+                    "qty" : 2
+                },
+                "5add40673a2938d9901806e1" : {
+                    "_id" : ObjectId("5add40673a2938d9901806e1"),
+                    "name" : "Pork Ribs Soup",
+                    "class" : "Soup",
+                    "picture" : "../images/porksoup.jpg",
+                    "price" : 11,
+                    "stock" : 8,
+                    "description" : "One kind of soup is pork ribs and lotus root stew for three hours.",
+                    "qty" : 2
+                }
+            },
+            "time" : "4/23/2018 12:44:27 AM",
+            "totalprice" : 109
+        },
+        {
+            "items" : {
+                "5ad0246c8c8d5e3b9afe4fbd" : {
+                    "_id" : ObjectId("5ad0246c8c8d5e3b9afe4fbd"),
+                    "name" : "tiramisu",
+                    "class" : "Desserts",
+                    "picture" : "../images/tiramisu.jpg",
+                    "price" : 13,
+                    "stock" : 3,
+                    "description" : "Tiramisu is a popular coffee-flavoured Italian dessert. It is made of ladyfingers dipped in coffee, layered with a whipped mixture of eggs, sugar, and mascarpone cheese, flavoured with cocoa.",
+                    "qty" : 2
+                },
+                "5add416b3a2938d9901807c8" : {
+                    "_id" : ObjectId("5add416b3a2938d9901807c8"),
+                    "name" : "Roast Shrimp",
+                    "class" : "Entree",
+                    "picture" : "../images/roastshrimp.jpg",
+                    "price" : 11,
+                    "stock" : 14,
+                    "description" : "A kind of roasted shrimp, covered with breadcrumbs.",
+                    "qty" : 1
+                }
+            },
+            "time" : "4/23/2018 12:45:22 AM",
+            "totalprice" : 37
+        },
+        {
+            "items" : {
+                "5add416b3a2938d9901807c8" : {
+                    "_id" : ObjectId("5add416b3a2938d9901807c8"),
+                    "name" : "Roast Shrimp",
+                    "class" : "Entree",
+                    "picture" : "../images/roastshrimp.jpg",
+                    "price" : 11,
+                    "stock" : 13,
+                    "description" : "A kind of roasted shrimp, covered with breadcrumbs.",
+                    "qty" : 2
+                },
+                "5ad0246c8c8d5e3b9afe4fbd" : {
+                    "_id" : ObjectId("5ad0246c8c8d5e3b9afe4fbd"),
+                    "name" : "tiramisu",
+                    "class" : "Desserts",
+                    "picture" : "../images/tiramisu.jpg",
+                    "price" : 13,
+                    "stock" : 1,
+                    "description" : "Tiramisu is a popular coffee-flavoured Italian dessert. It is made of ladyfingers dipped in coffee, layered with a whipped mixture of eggs, sugar, and mascarpone cheese, flavoured with cocoa.",
+                    "qty" : 1
+                },
+                "5add35883a2938d99017fd3e" : {
+                    "_id" : ObjectId("5add35883a2938d99017fd3e"),
+                    "name" : "Economic Combo",
+                    "class" : "Combo",
+                    "picture" : "../images/combo1.jpg",
+                    "price" : 25,
+                    "stock" : 7,
+                    "description" : "An economic business combo for fast-paced urban life. ",
+                    "qty" : 1
+                }
+            },
+            "time" : "4/23/2018 12:49:50 AM",
+            "totalprice" : 60
+        },
+        {
+            "items" : {
+                "5add40673a2938d9901806e1" : {
+                    "_id" : ObjectId("5add40673a2938d9901806e1"),
+                    "name" : "Pork Ribs Soup",
+                    "class" : "Soup",
+                    "picture" : "../images/porksoup.jpg",
+                    "price" : 11,
+                    "stock" : 8,
+                    "description" : "One kind of soup is pork ribs and lotus root stew for three hours.",
+                    "qty" : 2
+                },
+                "5add3e543a2938d990180506" : {
+                    "_id" : ObjectId("5add3e543a2938d990180506"),
+                    "name" : "Fried Rice",
+                    "class" : "Appetizer",
+                    "picture" : "../images/friedrice.jpg",
+                    "price" : "12",
+                    "stock" : 7,
+                    "description" : "Fried rice with carrots, corn and eggs. ",
+                    "qty" : 4
+                },
+                "5add35883a2938d99017fd3e" : {
+                    "_id" : ObjectId("5add35883a2938d99017fd3e"),
+                    "name" : "Economic Combo",
+                    "class" : "Combo",
+                    "picture" : "../images/combo1.jpg",
+                    "price" : "23",
+                    "stock" : "5",
+                    "description" : "An economic business combo for fast-paced urban life. ",
+                    "qty" : 2
+                }
+            },
+            "time" : "4/23/2018 11:10:49 PM",
+            "totalprice" : 116
+        },
+        {
+            "items" : {
+                "5ad0246c8c8d5e3b9afe4fbd" : {
+                    "_id" : ObjectId("5ad0246c8c8d5e3b9afe4fbd"),
+                    "name" : "Tiramisu",
+                    "class" : "Desserts",
+                    "picture" : "../images/tiramisu.jpg",
+                    "price" : 13,
+                    "stock" : 30,
+                    "description" : "Tiramisu is a popular coffee-flavoured Italian dessert. It is made of ladyfingers dipped in coffee, layered with a whipped mixture of eggs, sugar, and mascarpone cheese, flavoured with cocoa.",
+                    "qty" : 3
+                },
+                "5ad229921e96b547b4a9684e" : {
+                    "_id" : ObjectId("5ad229921e96b547b4a9684e"),
+                    "name" : "Dumpling",
+                    "class" : "Desserts",
+                    "picture" : "../images/xiajiao.jpg",
+                    "price" : 15,
+                    "stock" : 15,
+                    "description" : "The dumpling is sometimes called a shrimp bonnet for its pleated shape. This dish is often served together with siumaai.",
+                    "qty" : 2
+                }
+            },
+            "time" : "4/24/2018 8:30:15 AM",
+            "totalprice" : 69
+        }
+    ]
+}

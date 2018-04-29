@@ -1,0 +1,38 @@
+/* 1 */
+{
+    "_id" : ObjectId("5ad7bba74b02ae6f97f77f70"),
+    "username" : "Jason",
+    "password" : "e10adc3949ba59abbe56e057f20f883e",
+    "authority" : 0,
+    "name" : "Jason Chang",
+    "phone" : "1452342524",
+    "email" : "464494933@qq.com",
+    "avatar" : null,
+    "address" : null
+}
+
+/* 2 */
+{
+    "_id" : ObjectId("5ada0becfe2f91824ba72a7c"),
+    "username" : "Tan",
+    "authority" : 1,
+    "password" : "e10adc3949ba59abbe56e057f20f883e",
+    "name" : "Tan Ning",
+    "phone" : "4699325833",
+    "email" : "gwg6789234@gmail.com",
+    "avatar" : null,
+    "address" : null
+}
+
+/* 3 */
+{
+    "_id" : ObjectId("5adab7ff089eec8e72f82dcc"),
+    "username" : "test",
+    "authority" : 0,
+    "password" : "e10adc3949ba59abbe56e057f20f883e",
+    "name" : "Zheng Gao",
+    "phone" : "4699294166",
+    "email" : "dnfkanjkj@gmail.com",
+    "avatar" : null,
+    "address" : null
+}

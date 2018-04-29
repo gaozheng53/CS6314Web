@@ -1,0 +1,36 @@
+{
+    "_id" : ObjectId("5ad7e747c9885e4adbd4e093"),
+    "username" : "Jason",
+    "items" : {
+        "5ad264f5c9885e4adbd2c31c" : {
+            "_id" : ObjectId("5ad264f5c9885e4adbd2c31c"),
+            "name" : "Kung Pao Chicken",
+            "class" : "Entree",
+            "picture" : "../images/gongbaojiding.jpg",
+            "price" : 25,
+            "stock" : 24,
+            "description" : "Kung Pao chicken also transcribed as Gong Bao or Kung Po, is a spicy, stir-fried Chinese dish made with chicken, peanuts, vegetables, and chili peppers. The classic dish in Sichuan cuisine originated in the Sichuan Province of south-western China and includes Sichuan peppercorns. ",
+            "qty" : 2
+        },
+        "5ac8d81e846d7ab285b29546" : {
+            "_id" : ObjectId("5ac8d81e846d7ab285b29546"),
+            "name" : "Fish Filets",
+            "class" : "Entree",
+            "picture" : "../images/shuizhuyu.jpg",
+            "price" : 35,
+            "stock" : "30",
+            "description" : "Boiled fish is usually made from fresh grass carp, bean sprouts, pepper and other ingredients. Oil but not greasy, spicy but not dry, hemp without bitter, tender and tender is its characteristic.",
+            "qty" : 4
+        },
+        "5ad229921e96b547b4a9684e" : {
+            "_id" : ObjectId("5ad229921e96b547b4a9684e"),
+            "name" : "Dumpling",
+            "class" : "Desserts",
+            "picture" : "../images/xiajiao.jpg",
+            "price" : 15,
+            "stock" : 13,
+            "description" : "The dumpling is sometimes called a shrimp bonnet for its pleated shape. This dish is often served together with siumaai.",
+            "qty" : 2
+        }
+    }
+}
